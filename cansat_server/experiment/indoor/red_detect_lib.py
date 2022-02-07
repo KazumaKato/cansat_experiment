@@ -68,8 +68,8 @@ def red_masks_get(sampleimage):
     image = cv2.imread(sampleimage) # ファイル読み込み
 
     # HSVでの色抽出
-    hsvLower_0 = np.array([0, 80, 50])    # 抽出する色の下限0(赤の抽出のため二つにわけて合成が必要)
-    hsvLower_1 = np.array([170, 80, 50])  # 抽出する色の下限1(赤の抽出のため二つにわけて合成が必要)
+    hsvLower_0 = np.array([0, 70, 50])    # 抽出する色の下限0(赤の抽出のため二つにわけて合成が必要)
+    hsvLower_1 = np.array([170, 70, 50])  # 抽出する色の下限1(赤の抽出のため二つにわけて合成が必要)
     hsvUpper_0 = np.array([10, 255, 255])    # 抽出する色の上限0(赤の抽出のため二つにわけて合成が必要)
     hsvUpper_1 = np.array([179, 255, 255])   # 抽出する色の上限1(赤の抽出のため二つにわけて合成が必要)
 
